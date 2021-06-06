@@ -7,7 +7,8 @@ class Person(object):
                 self.idnumber = idnumber 
     
     def display(self): 
-                print(self.name) 
+                print(self.name )
+                print() 
                 print(self.idnumber) 
 
 
@@ -21,7 +22,15 @@ class Employee(Person):
 
 
 # creation of an object variable or an instance 
-a = Employee('Rahul', 886012, 200000, "Intern")     
+e = Employee('Rahul', 886012, 200000, "Intern")     
   
 # calling a function of the class Person using its instance 
-a.display() 
+e.display() 
+
+# Built in function 
+# True if DerivedClass is a subclass of the BaseClass
+print(issubclass(Employee, Person))  #True 
+print(isinstance(e, Employee)) #True 
+print(type(e)) # <class '__main__.Employee'>
+
+
